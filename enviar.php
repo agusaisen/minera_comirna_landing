@@ -25,10 +25,10 @@ try {
     // Configuracion SMTP
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                         // Mostrar salida (Desactivar en producción)
     $mail->isSMTP();                                               // Activar envio SMTP
-    $mail->Host  = 'smtp.gmail.com';                     // Servidor SMTP
+    $mail->Host  = '*****';                     // Servidor SMTP
     $mail->SMTPAuth  = true;                                       // Identificacion SMTP
-    $mail->Username  = 'noreplycomirna@gmail.com';                  // Usuario SMTP
-    $mail->Password  = 'xofg haur logx oeob';	          // Contraseña SMTP
+    $mail->Username  = '*****';                  // Usuario SMTP
+    $mail->Password  = '******';	          // Contraseña SMTP
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port  = 587;
     $mail->CharSet = 'UTF-8';
@@ -45,7 +45,7 @@ try {
    // $mail->AltBody = $mensaje;
     $mail->send();
     echo 'El mensaje se ha enviado';
-    header("Location: https://comirna.tycserviciosdigitales.com.ar?status=ok");
+    header("Location: https://comirna.com.ar?status=ok");
     die();
 } catch (Exception $e) {
     echo "El mensaje no se ha enviado. Mailer Error: {$mail->ErrorInfo}";
