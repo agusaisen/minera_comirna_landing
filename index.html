@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minera Comirna</title>
+  <meta name="Description" content="Minera Comirna">
+  <meta name="Keywords" content="Minera Comirna">
+  <meta name="author" content="Bardo" />
+  <meta property="og:url" content="//www.comirna.com.ar/" />
+  <meta property="og:site_name" content="Minera Comirna" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Minera Comirna" />
+  <meta property="og:description" content="Minera Comirna" />
+  <!-- Minera Cormina -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/animate.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body onload=" check();">
+
+  <div class="slideshow-container" id="photos">
+    <div class="btn-cerrar"><a onclick="cerrarSlides()">X</a></div>
+    <a class="prev" onclick="plusSlides2(-1)">❮</a>
+    <div class="mySlides ">
+      <div class="numbertext">1 / 9</div>
+      <img src="photos/original/20231006_103742.webp">
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">2 / 9</div>
+      <img src="photos/original/d1b9dd14-d0a0-45fc-800e-ab214b548649.webp">
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">3 / 9</div>
+      <img src="photos/original/dji_export_1656864520042_cropped.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">4 / 9</div>
+      <img src="photos/original/dji_export_1656863575284.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">5 / 9</div>
+      <img src="photos/original/20221214_111523.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">6 / 9</div>
+      <img src="photos/original/20220818_153412.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">7 / 9</div>
+      <img src="photos/original/e0c0b035-3c53-4c2c-864d-f0520e931e5d.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">8 / 9</div>
+      <img src="photos/original/20230817_151933.webp">
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">9 / 9</div>
+      <img src="photos/original/20230817_152430_cropped.webp">
+    </div>
+    <a class="next" onclick="plusSlides2(1)">❯</a>
+  </div>
+
+
+  <div class="slideshow-container" id="products">
+    <div class="btn-cerrar"><a onclick="cerrarSlides2()">X</a></div>
+    <a class="prev" onclick="plusSlides22(-1)">❮</a>
+    <div class="mySlides2">
+      <div class="numbertext">1 / 10</div>
+      <img src="photos/bestoriginal.webp">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">2 / 10</div>
+      <img src="photos/bestlavanda.webp">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 10</div>
+      <img src="photos/bestsensitive.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">4 / 10</div>
+      <img src="photos/pipicontrol.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">5 / 10</div>
+      <img src="photos/pipicatoriginal.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">6 / 10</div>
+      <img src="photos/pipicatsensitive.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">7 / 10</div>
+      <img src="photos/pipicatlavanda.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">8 / 10</div>
+      <img src="photos/clean oil 1.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">9 / 10</div>
+      <img src="photos/polvo 2.webp">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">10 / 10</div>
+      <img src="photos/dry.webp">
+    </div>
+    <a class="next" onclick="plusSlides22(1)">❯</a>
+  </div>
+
+  <div class="menu-mb" id="menumb">
+    <img style="padding: 20px 40px 0px 0px;" src="svg/Menu close.svg" onclick="cerrarMenu()">
+    <div style="text-align: right; padding-right: 20px; padding-top: 130px;">
+      <span class="menu-mb-text" onclick="irA('nosotros')"> NOSOTROS</span>
+    </div>
+    <img class="divisor" src="svg/Rectangle 7.svg">
+
+    <div style="text-align: right; padding-right: 20px;">
+      <span class="menu-mb-text" onclick="irA('productos')"> PRODUCTOS/SERVICIOS</span>
+    </div>
+    <img class="divisor" src="svg/Rectangle 7.svg">
+
+    <div style="text-align: right; padding-right: 20px;">
+      <span class="menu-mb-text" onclick="irA('contacto')"> CONTACTO</span>
+    </div>
+    <img class="divisor" src="svg/Rectangle 7.svg">
+  </div>
+
+  <header class="header-main-dsk">
+    <div class="menu-main">
+      <a href="https://www.comirna.com.ar"> <img class="brand" src="brand/logo_cormina.webp" alt="logo minera comirna"
+          title="Minera Comirna" /></a>
+
+      <div class="container-1-2-1">
+        <div class="header-text" onclick="irA('nosotros')">NOSOTROS</div>
+
+        <svg width="1" height="20" viewBox="0 0 1 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0.5" width="1" height="19" fill="#E4CD20"></rect>
+        </svg>
+        <div class="header-text" onclick="irA('productos')">PRODUCTOS / SERVICIOS</div>
+        <svg width="1" height="20" viewBox="0 0 1 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0.5" width="1" height="19" fill="#E4CD20"></rect>
+        </svg>
+        <div class="header-text" onclick="irA('contacto')">CONTACTO</div>
+      </div>
+      <span class="btn" onclick="irA('contacto')">CONSULTAR</span>
+    </div>
+
+  </header>
+
+
+
+  <header class="header-main-mb">
+    <a href="https://www.comirna.com.ar"><img class="brand" src="brand/logo_cormina.webp" alt="logo minera comirna"
+        title="Minera Comirna" /></a>
+    <div class="menu-container"> <span class="btn" onclick="irA('contacto')">CONSULTAR</span>
+      <img src="svg/Menu.svg" onclick="verMenu()">
+    </div>
+
+  </header>
+
+
+  <section id="slider" class="slider-container">
+    <div class="slider">
+      <div class="slide" id="slide1"><img src="photos/Hero 1.webp" /></div>
+      <div class="slide" id="slide2"><img src="photos/Hero 2.webp" /></div>
+
+    </div>
+    <div class="dot">
+      <svg width="60" height="20" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="10" cy="10" r="10" fill="#398641" id="dot1" onclick="dot1()"></circle>
+        <circle cx="50" cy="10" r="10" fill="#404040" id="dot2" onclick="dot2()"></circle>
+      </svg>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container-patitas-top" id="nosotros">
+      <img src="svg/huellas 6.svg">
+    </div>
+
+  </section>
+
+  <section class="nosotros">
+    <div class="nosotros-columna1">
+      <h1 class="nosotros-header"><strong>Nosotros</strong></h1>
+      <img src="svg/Component 1.svg">
+      <br>
+      <br>
+
+      <p class="nosotros-body"><strong>
+          Somos una empresa productora de Minerales Industriales y productos variados como arenas sanitarias para
+          mascotas, absorbentes industriales, tierras y cargas inertes para la industria.</strong><br> Nuestra mina de
+        extracción se encuentra en <strong> Ingeniero Jacobacci</strong> se traslada el material a nuestra planta de
+        envasado en <strong>Cinco Saltos </strong> donde se distribuye directamente a distribuidores y supermercados de
+        todo
+        el país y el exterior.</p>
+      <div class="container-patitas-bottom">
+        <img src="svg/huellas 6.svg">
+      </div>
+    </div>
+    <div class="nosotros-columna2">
+      <div class="image-grid-dsk">
+        <img src="photos/20231006_103742-dsk.webp" class="img1" alt="Image 1" onclick="verFoto(1)">
+        <img src="photos/d1b9dd14-d0a0-45fc-800e-ab214b548649-dsk.webp" alt="Image 2" onclick="verFoto(2)">
+        <img src="photos/dji_export_1656864520042_cropped-dsk.webp" alt="Image 3" onclick="verFoto(3)">
+      </div>
+      <div class="image-grid-dsk">
+        <img src="photos/dji_export_1656863575284-dsk.webp" alt="Image 4" onclick="verFoto(4)">
+        <img src="photos/20221214_111523-dsk.webp" alt="Image 5" onclick="verFoto(5)">
+        <img src="photos/20220818_153412-dsk.webp" alt="Image 6" onclick="verFoto(6)">
+      </div>
+      <div class="image-grid-dsk">
+        <img src="photos/e0c0b035-3c53-4c2c-864d-f0520e931e5d-dsk.webp" alt="Image 7" onclick="verFoto(7)">
+        <img src="photos/20230817_151933-dsk.webp" alt="Image 8" onclick="verFoto(8)">
+        <img src="photos/20230817_152430_cropped-dsk.webp" alt="Image 9" onclick="verFoto(9)">
+      </div>
+      <div class="image-grid-mb">
+        <img src="photos/20231006_103742-mb.webp" class="img1" alt="Image 1" onclick="verFoto(1)">
+        <img src="photos/d1b9dd14-d0a0-45fc-800e-ab214b548649-mb.webp" alt="Image 2" onclick="verFoto(2)">
+        <img src="photos/dji_export_1656864520042_cropped-mb.webp" alt="Image 3" onclick="verFoto(3)">
+      </div>
+      <div class="image-grid-mb">
+        <img src="photos/dji_export_1656863575284-mb.webp" alt="Image 4" onclick="verFoto(4)">
+        <img src="photos/20221214_111523-mb.webp" alt="Image 5" onclick="verFoto(5)">
+        <img src="photos/20220818_153412-mb.webp" alt="Image 6" onclick="verFoto(6)">
+      </div>
+      <div class="image-grid-mb">
+        <img src="photos/e0c0b035-3c53-4c2c-864d-f0520e931e5d-mb.webp" alt="Image 7" onclick="verFoto(7)">
+        <img src="photos/20230817_151933-mb.webp" alt="Image 8" onclick="verFoto(8)">
+        <img src="photos/20230817_152430_cropped-mb.webp" alt="Image 9" onclick="verFoto(9)">
+      </div>
+    </div>
+
+    <div class="container-arco" id="productos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 193" fill="none">
+        <path
+          d="M-1457 0C-1042.78 92.8189 -416.955 163.359 284.789 185.582C1304.41 217.871 2170.54 138.218 2462.71 0H2134.64C1808.77 85.0671 1123.84 129.153 333.661 104.13C-144.593 88.9847 -582.767 51.0131 -925.094 0H-1457Z"
+          fill="white" />
+      </svg>
+    </div>
+  </section>
+  <section class="productos">
+    <h1 class="productos-header"><strong>Productos / Servicios</strong></h1>
+    <div class="contenedor-line">
+      <img src="svg/Component 2.svg">
+    </div>
+    <br>
+    <p class="productos-body">
+      Las piedras sanitarias no producen alergias y no se adhieren al pelaje. <br class="espacio" />Poseen PH neutro y
+      son 100%
+      naturales. Retienen y eliminan olores.</p>
+
+    <div class="linea">
+      <div class="linea-standard-title">
+        <div>
+          <span class="standard-1">Linea</span> <br />
+          <h2 class="standard-2"><strong>Standard</strong></h2>
+        </div>
+
+        <img class="the-best-logo" src="logos/The Best.webp" />
+
+      </div>
+      <div class="productos-container">
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox1">
+            <img src="photos/bestoriginal.webp" onclick="verFoto2(1)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="product1-title">The
+              Best &nbsp; </h3>
+            <h3 class="product1-title2">Original</h3>
+          </div>
+          <div class="product1-descripcion">
+            Con la calidad de siempre</div>
+          <p class="product1-weight">
+            1,8Kg · 3,6Kg</p>
+
+        </div>
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox1">
+            <img src="photos/bestlavanda.webp" onclick="verFoto2(2)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="product1-title">The
+              Best &nbsp; </h3>
+            <h3 class="product2-title2">Lavanda</h3>
+          </div>
+          <div class="product1-descripcion">
+            Perfumada</div>
+          <p class="product1-weight">
+            1,8Kg · 3,6Kg</p>
+
+        </div>
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox1">
+
+            <img src="photos/bestsensitive.webp" onclick="verFoto2(3)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="product1-title">The
+              Best &nbsp; </h3>
+            <h3 class="product3-title2">Sensitive</h3>
+          </div>
+          <div class="product1-descripcion">
+            Para gatos bebés o gatos con sobrepeso</div>
+          <p class="product1-weight">
+            1,8Kg </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="linea">
+      <div class="linea-premium-title">
+        <div>
+          <span class="premium-1">Linea &nbsp; </span> <br />
+          <h2 class="premium-2"><strong>Premium</strong></h2>
+        </div>
+
+        <img class="the-best-logo" src="logos/pipicat.webp" onclick="verFoto2(4)" />
+
+      </div>
+      <div class="productos-premium-container-dsk">
+        <div class="productos2-subcontainer">
+          <div class="productos2-imgbox1">
+            <img src="photos/pipicontrol.webp" />
+          </div>
+
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="productb-title">Pipicat &nbsp; </h3>
+            <h3 class="productb2-title1">ultra control</h3>
+          </div>
+          <div class=" product1-descripcion">Arena sanitaria (bentonita)<br />con carbón activado
+          </div>
+          <p class="productb-weight">4Kg</p>
+
+        </div>
+
+        <div class="productos2-subcontainer">
+          <div class="productos2-imgbox1">
+            <img src="photos/pipicatoriginal.webp" onclick="verFoto2(5)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="productb-title">Pipicat &nbsp; </h3>
+            <h3 class="productb2-title2">Bianco Original</h3>
+          </div>
+          <div class=" product1-descripcion">Con marcadores<br />(piedras sanitarias)
+          </div>
+          <p class="productb-weight">1,8kg</p>
+
+        </div>
+
+        <div class="productos2-subcontainer">
+          <div class="productos2-imgbox1">
+            <img src="photos/pipicatsensitive.webp" onclick="verFoto2(6)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end; ">
+            <h3 class="productb-title">Pipicat &nbsp; </h3>
+            <h3 class="productb3-title2">Bianco Sensitive</h3>
+          </div>
+          <div class=" product1-descripcion">Con marcadores, para gatitos bebés <br />o gatos con sobrepeso
+          </div>
+          <p class="productb-weight">1,8kg</p>
+
+        </div>
+
+        <div class="productos2-subcontainer">
+          <div class="productos2-imgbox1">
+            <img src="photos/pipicatlavanda.webp" onclick="verFoto2(7)" />
+          </div>
+          <div style="display: flex;  align-items: flex-end;">
+            <h3 class="productb-title">Pipicat &nbsp; </h3>
+            <h3 class="productb4-title2">Bianco Lavanda</h3>
+          </div>
+          <div class=" product1-descripcion">Perfumada con marcadores <br />(aroma a lavanda)
+          </div>
+          <p class="productb-weight">1,8kg</p>
+
+        </div>
+
+      </div>
+
+
+
+  </section>
+
+
+  <section class="medals-dsk">
+    <img src="svg/Medals.svg">
+  </section>
+  <section class="medals-mb">
+    <img src="svg/medals2.svg">
+  </section>
+  <section class="productos2">
+    <div class="linea">
+      <div class="linea-standard-title">
+        <div>
+          <span class="standard-1">Productos</span> <br />
+          <h2 class="industrial"><strong>Industriales</strong></h2>
+        </div>
+
+      </div>
+      <div class="productos-container">
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox3">
+
+            <img src="photos/clean oil 1.webp" onclick="verFoto2(8)" />
+          </div>
+          <div class="product-descripcion-container">
+            <h3 class="productb2-title1">CLEAN OIL </h3>
+            <div class="product1-descripcion">
+              Absorbente natural para la industria</div>
+          </div>
+        </div>
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox3">
+
+            <img src="photos/polvo 2.webp" onclick="verFoto2(9)" />
+          </div>
+          <div class="product-descripcion-container">
+            <h3 class="productb2-title1">POLVO<br>INDUSTRIAL</h3>
+          </div>
+        </div>
+        <div class="productos-subcontainer">
+          <div class="productos-imgbox3">
+
+            <img src="photos/dry.webp" onclick="verFoto2(10)" />
+          </div>
+          <div class="product-descripcion-container">
+            <h3 class="productb2-title1">DRY OIL</h3>
+            <div class="product1-descripcion" id="contacto">
+              Utilizado como absorbente</div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacto">
+    <div class="contacto-dsk"> <img style="width: 100%;" src="svg/Component contacto.svg">
+      <div class="form">
+        <div class="form1">
+          <span> Email </span>
+          <p>
+            <a href="mailto:comercial@comirna.com.ar">comercial@comirna.com.ar</a>
+          </p>
+          <div style="height: 50px;">
+
+          </div>
+          <span>
+            Teléfono comercial
+          </span>
+          <p>
+            <a href="tel: +542996207766">(0299) 620-7766</a>
+          </p>
+          <a style="cursor: pointer;" href="https://wa.me/+542996207766" target="_blank">
+            <img src="logos/whatsapp.webp">
+          </a>
+        </div>
+        <div class="form2">
+          <form method="POST" action="enviar.php" id="form-dsk" enctype="application/x-www-form-urlencoded">
+
+            <div class="form-container">
+              <div class="form-row">
+                <div class="form-column">
+                  <h5>Nombre*</h5>
+                  <div class="form-input-container">
+                    <input placeholder="Su nombre" id="nombre" name="nombre" required>
+                  </div>
+                </div>
+                <div class="form-column">
+                  <h5>Correo*</h5>
+                  <div class="form-input-container">
+                    <input placeholder="Su dirección de correo" id="email" name="email" type="email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-column">
+                  <h5>Mensaje*</h5>
+                  <div class="form-input-container">
+                    <textarea placeholder="Ingrese su mensaje..." id="mensaje" name="mensaje" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="g-recaptcha" data-sitekey="6Lc_3lQqAAAAAEtwqkHvjD5AHXvo3Js9qXLxX8Pf"
+                  data-callback="enableBtnDsk"></div>
+                <button class="btn " id="btn-dsk" disabled type='submit'>ENVIAR</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contacto-mb">
+      <h1 class="productos-header"><strong>Contacto</strong></h1>
+      <div class="contenedor-line">
+        <img src="svg/Component 2.svg">
+      </div>
+
+      <div class="form">
+
+        <div class="form2">
+          <form method="POST" id="form-mb" action="enviar.php" enctype="application/x-www-form-urlencoded">
+            <div class="form-container">
+              <div class="form-row">
+                <div class="form-column">
+                  <h5>Nombre*</h5>
+                  <div class="form-input-container">
+                    <input placeholder="Su nombre" id="nombre" name="nombre" required>
+                  </div>
+                </div>
+                <div class="form-column">
+                  <h5>Correo*</h5>
+                  <div class="form-input-container">
+                    <input placeholder="Su dirección de correo" id="email" name="email" type="email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-column">
+                  <h5>Mensaje*</h5>
+                  <div class="form-input-container">
+                    <textarea placeholder="Ingrese su mensaje..." id="mensaje" name="mensaje" required></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 100%; text-align: center;">
+              <div class="g-recaptcha" data-sitekey="6Lc_3lQqAAAAAEtwqkHvjD5AHXvo3Js9qXLxX8Pf"
+                data-callback="enableBtnMb"></div>
+                <br>
+              <button class="btn" id="btn-mb" disabled type='submit'>ENVIAR</button>
+            </div>
+          </form>
+        </div>
+        <div class="form1">
+
+          <span> Email </span>
+          <p>
+            comercial@comirna.com.ar
+          </p>
+          <div style="height: 12px;">
+
+          </div>
+          <div class="contacto-mb-container">
+            <div><span>
+                Teléfono comercial
+              </span>
+              <p>
+                (0299) 620-7766
+              </p>
+            </div>
+            <a style="cursor: pointer;" href="https://wa.me/+542996207766" target="_blank">
+              <img src="logos/whatsapp.webp">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="ubicacion">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3108.903472445644!2d-68.05926!3d-38.811765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDQ4JzQyLjQiUyA2OMKwMDMnMzMuMyJX!5e0!3m2!1ses-419!2sar!4v1727113704930!5m2!1ses-419!2sar"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <section class="footer">
+    <img src="svg/line.svg">
+    <h5 class="txt-footer">©2024 MINERA COMIRNA SRL · Todos los derechos reservados</h5>
+  </section>
+
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>
